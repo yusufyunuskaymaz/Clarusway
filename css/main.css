@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+/* Navbar Section */
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+li{
+	list-style-type: none;
+}
+
+#navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 14px;
+	height: 90px;
+	border-bottom: 1px solid #ccc;
+}
+
+#navbar ul {
+	display: flex;
+	align-items: center;
+	padding-left: 180px;
+}
+
+#navbar ul li{
+	padding: 10px 10px 10px 10px;
+
+}
+
+#navbar ul .button-1{
+	color: #542281;
+	border: 1px solid #542281;
+	font-size: 18px;
+
+}
+
+#navbar ul .button-2{
+	background-color: #542281;
+	border: 1px solid #542281;
+	margin-left: 13px;
+}
+
+#navbar ul .button-2 a{
+	color: white;
+	font-size: 18px;
+}
+
+
+#navbar ul .button-2:hover{
+	opacity: 0.6;
+}
+
+
+#main .hero{
+	height: 70vh;
+	width: 100%;
+	background-image: url(b.jpg);
+	background-size: cover;
+	background-position: center;
+	
+}
+
+#badges{
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	background-color: #FAFAFA;
+}
+
+#badges .heading{
+	font-size: 35px;
+	margin: auto;
+	width: 70%;
+	text-align:center;
+	margin-top: 50px;
+}
+
+#badges .logos{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+
+
+
+#badges .logos img{
+	width: 200px;
+}
+
+
+
+#courses .cards{
+	display: flex;
+	justify-content: center;
+}
+
+#courses .card{
+	margin: 15px;
+	width: 17%;
+	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+
+}
+
+
+#courses .card img{
+	width: 200px;
+	padding-top:20px;
+	text-align: center;
+}
+
+
+#courses .card .content{
+	padding:30px;
+	font-size: 18px;
+}
+
+#courses .card .content a{
+	font-size: 20px;
+	color: #542281;
+	font-weight: 700;
+	text-decoration: underline;
+	display: inline-block;
+	padding-top:40px;
+}
