@@ -4,8 +4,11 @@
 }
 
 html {
-  font-family: 'Nunito', sans-serif;
-/* Navbar Section */
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
+
+
+	/* Navbar Section */
 }
 
 a{
@@ -24,6 +27,11 @@ li{
 	font-size: 14px;
 	height: 90px;
 	border-bottom: 1px solid #ccc;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	box-shadow: 0 0 5px 0 #ccc;
 }
 
 #navbar ul {
@@ -91,17 +99,14 @@ li{
 	text-align: center;
 }
 
-
-
-
-
-
 #badges .logos img{
 	width: 200px;
 }
 
 
-
+#courses{
+	margin-bottom: 80px;
+}
 #courses .cards{
 	display: flex;
 	justify-content: center;
@@ -111,20 +116,22 @@ li{
 	margin: 15px;
 	width: 17%;
 	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+	text-align: center;
 
 }
 
 
 #courses .card img{
 	width: 200px;
-	padding-top:20px;
+	padding-top:10px;
 	text-align: center;
 }
 
 
 #courses .card .content{
 	padding:30px;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 28px;
 }
 
 #courses .card .content a{
@@ -135,3 +142,154 @@ li{
 	display: inline-block;
 	padding-top:40px;
 }
+
+#courses .cards .card .content h2{
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+
+#courses .heading{
+	padding: 50px;
+	text-align: center;
+	font-size: 23px;
+}
+
+.çizgi{
+	width: 150px;
+	height: 3px;
+	background-color: #7c7c7c7c;
+	margin: auto;
+	margin-top: 5px;
+}
+
+
+#info{
+	background-color: #FAFAFA;
+}
+
+#info .body{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	padding-top: 60px;
+}
+
+#info .body .content{
+	padding: 40px;
+}
+
+#info .body .content h5{
+	font-size: 30px;
+	padding-bottom: 25px;
+	
+}
+
+#info .body .content p{
+	font-size: 16px;
+	line-height: 30px;
+	
+}
+
+#info .body .content .register{
+	padding: 6px 20px;
+	margin-top: 40px;
+	font-size: 24px;
+	border: 1px solid rgba(129,76,143,0.25);
+	color: #542281;
+	background-color: #fff;
+	display: inline-block;
+	font-weight: 600 !important;
+	opacity: 0.8;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+
+
+#info .body .image img{
+	width: 600px;
+	padding-top: 80px;
+}
+
+#contact{
+	background-image: linear-gradient(180deg,rgba(6,118,216,0.15) 0%,#ffffff 100%);
+
+}
+
+.contact{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+
+}
+
+.contact .video{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.contact .video h1{
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+
+}
+
+.contact .video p{
+	margin-bottom: 80px;
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 550;
+
+
+}
+
+.contact .video img{
+	width: 500px;
+}
+
+iframe{
+	border: none;
+}
+
+.form{
+	margin: auto;
+	text-align: center;
+}
+
+.form .form-group{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form .form-group input{
+	padding: 10px;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid black;
+	
+}
+
+.form .form-group label{
+	font-size: 16px;
+	text-align: left;
+	font-weight: 700;
+	color: #132C47;
+	
+}
+
+.formButton{
+	border: 1px solid black;
+	padding: 10px;
+	width: 100%;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 100px;
+	cursor: pointer;
+}
+
