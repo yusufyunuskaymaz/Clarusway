@@ -27,11 +27,10 @@ li{
 	font-size: 14px;
 	height: 90px;
 	border-bottom: 1px solid #ccc;
-	position: fixed;
-	width: 100%;
-	top: 0;
+	
 	background-color: white;
 	box-shadow: 0 0 5px 0 #ccc;
+	z-index: 1;
 }
 
 #navbar ul {
@@ -105,7 +104,6 @@ li{
 
 
 #courses{
-	margin-bottom: 80px;
 }
 #courses .cards{
 	display: flex;
@@ -117,6 +115,7 @@ li{
 	width: 17%;
 	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
 	text-align: center;
+	height: 105vh;
 
 }
 
@@ -141,6 +140,7 @@ li{
 	text-decoration: underline;
 	display: inline-block;
 	padding-top:40px;
+	
 }
 
 #courses .cards .card .content h2{
@@ -203,6 +203,7 @@ li{
 	font-weight: 600 !important;
 	opacity: 0.8;
 	font-family: 'Nunito', sans-serif;
+	z-index: -1;
 	
 }
 
@@ -292,4 +293,183 @@ iframe{
 	margin-top: 100px;
 	cursor: pointer;
 }
+
+
+.cards{
+	height: 150vh;
+}
+
+.cards h1{
+	text-align: center;
+	padding: 80px;
+	font-size: 35px;
+}
+
+.cards .cards-2{
+	display: flex;
+	justify-content: center;
+}
+
+.cards .card{
+	width: 18%;
+	box-shadow: 10px 16px 16px 10px rgba(0,0,0,0.2);
+	margin: 15px;
+	height: 60vh;
+
+}
+
+.cards .card .fa-tags{
+	font-size: 100px;
+	color: #542281;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+	background-color: #ccc;
+	border-radius: 100%;
+
+}
+
+.cards .card .content{
+	text-align: center;
+	padding: 35px;
+
+	
+}
+
+.cards .card .content h5{
+	font-size: 25px;
+	color: #542281;
+	padding: 5px 5px 10px 5px;
+
+}
+
+.cards .card .content p{
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+	padding: 5px 3px 40px 3px;
+
+}
+
+.cards .card .content a{
+	font-weight: 600;
+	color: #542281;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	background-color: #242424;
+	padding: 155px;
+}
+
+.footer .sec{
+	width: 20%;
+	
+}
+
+.footer .sec ul li{
+	padding: 5px;
+	color: #bfbfbf;
+	list-style-type: none;
+}
+
+.footer .sec a{
+	color: white;
+}
+
+.footer .sec p{
+	line-height: 25px;
+}
+
+.footer .sec input{
+	padding: 15px;
+	background-color: #242424;
+	border: none;
+	border: 1px solid white;
+	margin-bottom: 30px;
+}
+
+.footer .sec .button{
+	padding: 15px 65px;
+	
+	background-color: white;
+	color: black;
+}
+
+.footer .sec ul .footer-heading{
+	color: white;
+	font-size: 20px;
+	text-decoration: underline;
+	font-weight: 800 !important;
+}
+
+.footer-heading{
+	color: white;
+	font-size: 20px;
+	text-decoration: underline;
+	margin-bottom: 5px;
+	font-weight: 800 !important;
+
+}
+
+.footer .sec .footer-heading-2 li a{
+	color: #bfbfbf;
+	text-decoration: underline;
+}
+
+.footer .sec .footer-heading-2{
+	margin-top: 50px;
+}
+
+
+.footer .sec .social-media{
+	display: flex;
+}
+
+.footer .sec .deneme i{
+	padding-right: 15px;
+}
+
+.footer .sec .deneme .fa-whatsapp{
+	color: #25D366;
+	font-size: 25px;
+}
+
+.footer .sec .social-media li{
+	background-color: #4267b2;
+	padding: 10px 15px;
+	border-radius: 100%;
+	margin: 0 15px;
+	margin-left: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	
+}
+
+.footer .sec .quick-links{
+	margin-top: 50px;
+}
+
+
+.footer .sec .simple-title{
+	color: white;
+	font-size: 18px;
+	font-weight: 500 !important;
+}
+
+
+.author{
+	background-color: firebrick;
+}
+
+.author p{
+	padding: 25px;
+	text-align: center;
+	color: #ccc;
+}
+
+
 
