@@ -1,19 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-
-html {
-	font-family: 'Montserrat', sans-serif;
 	font-family: 'Nunito', sans-serif;
 
-
-	/* Navbar Section */
 }
 
 a{
 	text-decoration: none;
-	color: black;
 }
 
 li{
@@ -27,29 +20,164 @@ li{
 	font-size: 14px;
 	height: 90px;
 	border-bottom: 1px solid #ccc;
-	
 	background-color: white;
 	box-shadow: 0 0 5px 0 #ccc;
 	z-index: 1;
 }
 
-#navbar ul {
+#navbar ul.main-menu {
 	display: flex;
 	align-items: center;
 	padding-left: 180px;
 }
 
-#navbar ul li{
-	padding: 10px 10px 10px 10px;
 
+#navbar ul li{
+	padding: 10px;
+	font-weight: 400;
+}
+
+#navbar .sub-menu{
+	display: none;
+	position: absolute;
+	background-color: white;
+	border-top: 3px solid #2ea3f2;
+	width: 280px;
+	margin-top: 35px;
+	padding: 20px 0px;
+	transition: height 4s;
+}
+
+
+#navbar ul .first-list:hover .sub-menu{
+	display: block;
+	height: 200px;
+	
+}
+
+#navbar ul li:hover .sub-menu li{
+	font-size: 13px;
+	color: #000000BA;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 7px 20px;
+	cursor: pointer;
+}
+
+.lastItems{
+	color: red !important;
+}
+
+
+
+/*Normalde bunun çalışmaması gerek nasıl çalıştı?*/
+#navbar ul li:hover .sub-menu li:hover{
+	/*opacity: 0.8;
+	transition: .6s*/
+}
+
+/* Sub Menus --------------------------- */
+
+.first-dropdown-menu{
+	z-index: 9999;
+	display: none;
+	position: absolute;
+	left: 260px;
+	bottom: 3px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0px 0px 1px gray;
+	border-top: 3px solid #2ea3f2;
+	padding: 15px 5px;
+}
+
+.second-dropdown-menu{
+	z-index: 9999;
+	display: none;
+	position: absolute;
+	left: 260px;
+	bottom: 90px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0px 0px 1px gray;
+	border-top: 3px solid #2ea3f2;
+	padding: 15px 5px;
+}
+
+.third-dropdown-menu{
+	z-index: 9999;
+	display: none;
+	position: absolute;
+	left: 260px;
+	bottom: 80px;
+	width: 300px;
+	background-color: white;
+	box-shadow: 0px 0px 1px gray;
+	border-top: 3px solid #2ea3f2;
+	padding: 15px 5px;
+}
+
+
+.first-dropdown:hover .first-dropdown-menu{
+	display: block;
+}
+
+.first-dropdown-menu li:hover{
+	opacity: 0.6;
+	transition: .3s;
+	
+}
+
+.first-dropdown:hover .second-dropdown-menu{
+	display: block;
+}
+
+.second-dropdown-menu li:hover{
+	opacity: 0.6;
+	transition: .3s;
+	
+}
+
+.first-dropdown:hover .third-dropdown-menu{
+	display: block;
+}
+
+.third-dropdown-menu li:hover{
+	opacity: 0.6;
+	transition: .3s;
+	
+}
+
+
+
+
+
+#navbar ul li a{
+	font-size: 13px;
+	color: #000000BA;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-bottom: 40px;
 }
 
 #navbar ul .button-1{
-	color: #542281;
 	border: 1px solid #542281;
-	font-size: 18px;
-
 }
+
+#navbar ul .button-1 a{
+	color: #542281;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	
+}
+
+#navbar ul .button-1 a:hover{
+		opacity: 0.7;
+		transition: .6s;
+	
+}
+
 
 #navbar ul .button-2{
 	background-color: #542281;
@@ -60,18 +188,48 @@ li{
 #navbar ul .button-2 a{
 	color: white;
 	font-size: 18px;
+	font-weight: 600;
+
 }
 
 
 #navbar ul .button-2:hover{
 	opacity: 0.6;
+	transition: .6s;
+}
+
+.fa-solid{
+	color: white;
+	font-size: 20px;
+	position: relative;
+	left:6px;
+	top: 1px;
+}
+
+.angle-icon::after{
+   font-family: "Font Awesome 5 Free";
+   content: "\f107";
+   font-weight: 900;
+   position: relative;
+   left: 8px;
+   font-size: 12px
+}
+
+.angle-icon-sub::after{
+   font-family: "Font Awesome 5 Free";
+   content: "\f107";
+   font-weight: 900;
+   position: relative;
+   left: 8px;
+   font-size: 12px
+   
 }
 
 
 #main .hero{
 	height: 70vh;
 	width: 100%;
-	background-image: url(b.jpg);
+	background-image: url(../img/b.jpg);
 	background-size: cover;
 	background-position: center;
 	
@@ -103,15 +261,14 @@ li{
 }
 
 
-#courses{
-}
+
 #courses .cards{
 	display: flex;
 	justify-content: center;
 }
 
 #courses .card{
-	margin: 15px;
+	margin: 15px 15px 3px 15px;
 	width: 17%;
 	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
 	text-align: center;
@@ -173,7 +330,7 @@ li{
 	display: flex;
 	width: 80%;
 	margin: auto;
-	padding-top: 60px;
+	padding: 60px;
 }
 
 #info .body .content{
@@ -207,11 +364,22 @@ li{
 	
 }
 
+#info .body .content .register::after{
+   font-family: "Font Awesome 5 Free";
+   content: "\f105";
+   font-weight: 900;
+   font-size: 18px;
+   padding-left: 16px;
+   padding-top: 1px;
+}
+
+
+
 
 
 #info .body .image img{
 	width: 600px;
-	padding-top: 80px;
+	padding-top: 10px;
 }
 
 #contact{
@@ -223,7 +391,7 @@ li{
 	display: flex;
 	width: 80%;
 	margin: auto;
-	padding-top: 100px;
+	padding: 100px;
 
 }
 
@@ -251,10 +419,6 @@ li{
 
 .contact .video img{
 	width: 500px;
-}
-
-iframe{
-	border: none;
 }
 
 .form{
@@ -381,21 +545,34 @@ iframe{
 
 .footer .sec p{
 	line-height: 25px;
+	color: white;
 }
 
 .footer .sec input{
-	padding: 15px;
+	padding: 15px 20px;
 	background-color: #242424;
 	border: none;
 	border: 1px solid white;
 	margin-bottom: 30px;
+	color: white;
+	border-radius: 3px;
 }
+
+.footer .sec input:focus{
+	outline: none;
+}
+
 
 .footer .sec .button{
 	padding: 15px 65px;
-	
 	background-color: white;
 	color: black;
+
+}
+
+.footer .sec .button:hover{
+	opacity: 0.8;
+	transition: .6s;	
 }
 
 .footer .sec ul .footer-heading{
@@ -446,6 +623,12 @@ iframe{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	font-size: 20px;
+	
+}
+
+.footer .sec .social-media li:hover{
+	opacity: 0.9;
+	transition: .3s;
 	
 }
 
